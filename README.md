@@ -95,3 +95,17 @@ The dashboard feature offers real-time visualization of application usage metric
    - AWS Cognito: [Estimate based on your expected user base]
    - AWS Lambda: [Estimate based on the number of Lambda invocations]
    - AWS SES: [Estimate based on the number of emails sent]
+
+2. Development and Deployment
+   - ADeveloper time: [Estimate based on the complexity of the project and developer rates]
+   - AInfrastructure setup: [Estimate based on the time required to set up AWS resources]
+   - ATesting and quality assurance: [Estimate based on the project's complexity and testing requirements]
+   - ADeployment and maintenance: [Estimate based on the frequency of updates and maintenance tasks]
+
+3. Tools and Services
+   - Git and GitHub: $0 (free for public repositories)
+   - React: $0 (open-source)
+   - AWS CLI: $0 (included with AWS account)
+   - Docker and DockerHub: [Estimate based on your usage of Docker and DockerHub]
+   - Axios: $0 (open-source)
+
