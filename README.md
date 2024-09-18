@@ -14,6 +14,7 @@ This proposal outlines the development and deployment of a web application on AW
 - Docker and DockHub
 - AWS SES
 - AWS CLI
+- AWS CloudWatch
 - Axios
 
 ## Project Overview
@@ -27,7 +28,16 @@ This proposal outlines the development and deployment of a web application on AW
 ## Prerequisites
 1. An AWS account with appropriate permissions to create and configure AWS services.
 2. Node.js and npm (Node Package Manager) installed on your local machine.
-3. Docker installed and running
+
+## Front-end UI
+   - Select a framework like React, Vue.js, or plain JavaScript to build the user interface. For the purposes of this project, we will use React to build the frontend user interface.
+
+1.	Clone or create a new React application on your local machine.
+2. Create a form component in the React application to collect user data. Include fields for full name, age, occupation, nationality, marital status, and email address.
+3.	Install the required dependencies, including Axios, which will be used to make HTTP requests to the API Gateway.
+4.	User Authentication: The web app will be integrated with Amazon Cognito for secure user registration and login.
+
+![login](/images/login.png)
 
 ## Setup the Backend (AWS Services)
 
@@ -42,19 +52,10 @@ This proposal outlines the development and deployment of a web application on AW
   - Store User Data: Save user data using the AWS SDK in your Lambda function for DynamoDB interaction.
   - Send Email Notification: Send a welcome email using Amazon Simple Email Service (SES) upon successful registration.
 
+![confirmation-mail](/images/welcome.png)
+
 4. Amazon CloudWatch
    - Integrate CloudWatch to log user activity, API calls, and errors for monitoring and troubleshooting.
-
-5.	Amazon SNS (optional): Consider setting up a topic in Amazon SNS to publish real-time user login events.
-   - The frontend can then subscribe to this topic to receive updates and display them on the dashboard.
-
-## Front-end UI
-   - Select a framework like React, Vue.js, or plain JavaScript to build the user interface. For the purposes of this project, we will use React to build the frontend user interface.
-
-1.	Clone or create a new React application on your local machine.
-2. Create a form component in the React application to collect user data. Include fields for full name, age, occupation, nationality, marital status, and email address.
-3.	Install the required dependencies, including Axios, which will be used to make HTTP requests to the API Gateway.
-4.	User Authentication: The web app will be integrated with Amazon Cognito for secure user registration and login.
 
 ## Dashboard
 Dashboard Feature
@@ -87,6 +88,8 @@ The dashboard feature offers real-time visualization of application usage metric
 
 7. Lambda Trigger:
    -	Configure the Lambda function to be triggered by DynamoDB table updates, ensuring real-time data reflection on the dashboard.
+
+![Dashboard](/images/dashboard.png)
 
 ## Total Estimated Budget
 
