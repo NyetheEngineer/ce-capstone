@@ -22,7 +22,7 @@ This proposal outlines the development and deployment of a web application on AW
 3. Display user details on dashboard
 4. Automate the project
 
-[!Infrastructure](./images/infrastructure.jpg)
+[Infrastructure](/images/infrastructure.png)
 
 ## Prerequisites
 1. An AWS account with appropriate permissions to create and configure AWS services.
