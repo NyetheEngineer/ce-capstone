@@ -89,8 +89,6 @@ The dashboard feature offers real-time visualization of application usage metric
 7. Lambda Trigger:
    -	Configure the Lambda function to be triggered by DynamoDB table updates, ensuring real-time data reflection on the dashboard.
 
-![Dashboard](/images/dashboard.png)
-
 ## Total Estimated Budget
 
 1. AWS Services
